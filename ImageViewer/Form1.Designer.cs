@@ -34,6 +34,7 @@
             this.labelFooter = new System.Windows.Forms.Label();
             this.label = new System.Windows.Forms.Label();
             this.pictureBox = new System.Windows.Forms.PictureBox();
+            this.progressBar = new System.Windows.Forms.ProgressBar();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.SuspendLayout();
@@ -44,10 +45,11 @@
             // 
             // panel1
             // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel1.Controls.Add(this.progressBar);
             this.panel1.Controls.Add(this.labelFooter);
             this.panel1.Controls.Add(this.label);
             this.panel1.Controls.Add(this.pictureBox);
@@ -58,8 +60,8 @@
             // 
             // labelFooter
             // 
-            this.labelFooter.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelFooter.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.labelFooter.ForeColor = System.Drawing.Color.Gray;
             this.labelFooter.Location = new System.Drawing.Point(10, 543);
             this.labelFooter.Name = "labelFooter";
@@ -69,8 +71,8 @@
             // 
             // label
             // 
-            this.label.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.label.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.label.Location = new System.Drawing.Point(10, 5);
@@ -81,9 +83,9 @@
             // 
             // pictureBox
             // 
-            this.pictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox.Location = new System.Drawing.Point(12, 61);
             this.pictureBox.Name = "pictureBox";
             this.pictureBox.Size = new System.Drawing.Size(747, 477);
@@ -91,6 +93,17 @@
             this.pictureBox.TabIndex = 4;
             this.pictureBox.TabStop = false;
             this.pictureBox.DoubleClick += new System.EventHandler(this.pictureBox_DoubleClick);
+            // 
+            // progressBar
+            // 
+            this.progressBar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.progressBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.progressBar.Location = new System.Drawing.Point(0, 0);
+            this.progressBar.Name = "progressBar";
+            this.progressBar.Size = new System.Drawing.Size(769, 3);
+            this.progressBar.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            this.progressBar.TabIndex = 7;
             // 
             // Form1
             // 
@@ -116,6 +129,7 @@
         private System.Windows.Forms.Label labelFooter;
         private System.Windows.Forms.Label label;
         private System.Windows.Forms.PictureBox pictureBox;
+        private System.Windows.Forms.ProgressBar progressBar;
     }
 }
 

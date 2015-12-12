@@ -39,6 +39,8 @@ namespace ImageWiewer
             }
             else
                 label.Text = "No Images Found";
+
+            progressBar.Maximum = images.Count;
         }
 
         private void showFooter()
@@ -59,6 +61,13 @@ namespace ImageWiewer
         void timer_Tick(object sender, EventArgs e)
         {
             showImage();
+
+            if (currIndex < images.Count - 1)
+                currIndex++;
+            else
+                currIndex = 0;
+
+            progressBar.Value = currIndex+1;
         }
 
         private void showImage()
@@ -90,11 +99,6 @@ namespace ImageWiewer
                 label.ForeColor = Color.Gray;
                 label.Font = new Font(label.Font, FontStyle.Regular);
             }
-
-            if (currIndex < images.Count - 1)
-                currIndex++;
-            else
-                currIndex = 0;
         }
 
         private void Form1_KeyUp(object sender, KeyEventArgs e)
