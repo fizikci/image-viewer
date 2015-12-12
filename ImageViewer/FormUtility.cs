@@ -41,6 +41,7 @@ namespace ImageWiewer
         private void button1_Click(object sender, EventArgs e)
         {
             FolderBrowserDialog fbd = new FolderBrowserDialog();
+            fbd.SelectedPath = Path.GetDirectoryName(Application.ExecutablePath);
             if (fbd.ShowDialog() == DialogResult.OK)
             {
                 images = new Dictionary<string, List<string>>();
